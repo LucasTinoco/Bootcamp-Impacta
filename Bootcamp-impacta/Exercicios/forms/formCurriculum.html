@@ -15,17 +15,17 @@
             <legend>Dados pessoais</legend>
             <div>
                 <label for="idCPF">CPF:</label>
-                <input type="text" id="idCPF" name="cpf">
+                <input type="text" id="idCPF" name="cpf" required="required">
             </div>
 
             <div>
                 <label for="idNome">Nome:</label>
-                <input type="text" id="idNome" name="nome">
+                <input type="text" id="idNome" name="nome" maxlength="50" required="required">
             </div>
 
             <div>
                 <label for="idDDN">Data de Nascimento:</label>
-                <input type="date" id="idDDN" name="dataNascimento">
+                <input type="date" id="idDDN" name="dataNascimento" required="required">
             </div>
 
             <div>
@@ -38,12 +38,12 @@
 
             <div>
                 <label for="idCel">Telefone:</label>
-                <input type="tel" id="idCel" name="Telefone">
+                <input type="tel" id="idCel" name="Telefone" maxlength="20" required="required">
             </div>
 
             <div>
                 <label for="idFoto">Foto:</label>
-                <input type="file" id="idFoto" name="foto">
+                <input type="file" id="idFoto" name="foto" required="required">
             </div>
 
         </fieldset>
@@ -52,31 +52,31 @@
             <div>
                 <label for="logradouro">Logradouro:</label>
                 <div>
-                    <input type="text" id="logradouro" name="logradouro" />
+                    <input type="text" id="logradouro" name="logradouro" required="required">
                 </div>
             </div>
             <div>
                 <label for="numero">Número:</label>
                 <div>
-                    <input type="number" id="numero" name="numero" />
+                    <input type="number" id="numero" name="numero" required="required">
                 </div>
             </div>
             <div>
                 <label for="bairro">Bairro:</label>
                 <div>
-                    <input type="text" id="bairro" name="bairro" />
+                    <input type="text" id="bairro" name="bairro" required="required">
                 </div>
             </div>
             <div>
                 <label for="cidade">Cidade:</label>
                 <div>
-                    <input type="text" id="cidade" name="cidade" />
+                    <input type="text" id="cidade" name="cidade" required="required">
                 </div>
             </div>
             <div>
                 <label for="estado">Estado:</label>
                 <div>
-                    <select name="estado" id="estado">
+                    <select name="estado" id="estado" required="required">
                         <option value="SP">São Paulo</option>
                         <option value="RS">Rio Grande do Sul</option>
                         <option value="BA">Bahia</option>
@@ -89,19 +89,19 @@
             <div>
                 <label for="cep">CEP:</label>
                 <div>
-                    <input type="text" id="cep" name="cep" />
+                    <input type="text" id="cep" name="cep" required="required">
                 </div>
             </div>
         </fieldset>
         <fieldset>
             <legend>Experiência profissional</legend>
-            <textarea rows="20" cols="30"></textarea>
+            <textarea rows="20" cols="30" required="required"></textarea>
         </fieldset>
         <legend>Pretensões</legend>
         <div>
             <label for="cargo1">Cargo 1:</label>
             <div>
-                <select name="cargo1" id="cargo1">
+                <select name="cargo1" id="cargo1" required="required">
                     <option value="1">Administrador Banco de Dados</option>
                     <option value="2">Programador Junior</option>
                     <option value="3">Analista Senior</option>
@@ -137,7 +137,7 @@
         </div>
 
         <div>
-            <label for="salario">Salário Pretendido:</label>
+            <label for="salario" required="required">Salário Pretendido:</label>
             <div>
                 <input type="text" id="salario" name="salario" />
             </div>

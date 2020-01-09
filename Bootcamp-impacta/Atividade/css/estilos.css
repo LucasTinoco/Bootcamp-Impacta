@@ -1,0 +1,27 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgba(73, 216, 73, 0.774);
+}
+.intro{
+    background: url(../imagens/footer2.jpg) center center fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    padding: 220px 0;
+    left: 0;
+    right: 0;
+}   
+.footer{
+    background: url(../imagens/footer3.jpg) center center fixed;
+    padding: 30px;
+    text-align: center;
+    color: white; 
+
+}
+.container {
+    margin: 60px 50px 50px 50px;
+}

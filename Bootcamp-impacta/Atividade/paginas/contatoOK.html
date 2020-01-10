@@ -6,14 +6,17 @@
     <title>ABC Tecnologia - Enviado com sucesso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/estilos.css" rel="stylesheet">
-
+    <link href="../css/form.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="exibirMensagem()" >
     <h1>Recebemos seu contato, em breve retornamos </h1>
 
-    <div id="div" contextmenu="voltarMenu">
+    <div id="mensagem" contextmenu="voltarMenu" class="info">
         <div class="container">
+            <h3>Contato adicionado com sucesso</h3>
+            <p>Clique com o direito para a ecssar o menu</p>
             <menu>
                 <menuitem label="voltar para o contato" onclick="location.href='contato.html';">
                 Voltar para o menu
@@ -25,6 +28,7 @@
             <a href="../index.html">Voltar</a>
         </section>
     </div>
+    <script src="../script/sucessoControls.js"></script>
 </body>
 
 </html>

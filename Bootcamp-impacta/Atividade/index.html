@@ -7,6 +7,7 @@
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/destaque.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta >
@@ -16,12 +17,14 @@
    
         <header>
             <nav >
-                <ul class="menu">
+                <ul class="menu" id="menuTopo">
                     <li><a href="#">A Empresa</a></li>
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="paginas/registro.html">Trabalhe Conosco</a></li>
                     <li><a href="paginas/contato.html">Contate</a></li>
+                    <li class="icon">
+                        <a href="javascript:voi(0);" onclick="mostraMenu()">&#9776</a></li>
                 </ul>
             </nav>
         </header>
@@ -65,6 +68,19 @@
     <footer class="footer">
         <p>Copyrisht 2020 - Todos os direitos reservados</p>
     </footer>
+
+    <script type="text/javascript">
+        function mostraMenu(){
+            const $menu = $('#menuTopo')
+            if($menu.hasClass('responsive')){
+                $menu.removeClass('responsive')
+            }
+            else{
+                $menu.addClass('responsive')
+            }
+        }
+    </script>
+
 </body>
 
 </html>
